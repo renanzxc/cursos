@@ -4,11 +4,16 @@ git config --global	core.editor subl #Comando do editor
 
 git init #Iniciar repositório local
 
+git remote add origin LINK REPO #Ligar a um repositório remoto
+git push -u origin master #Ligar a um repositório remoto
+
+
 git status
 git add nomearquivo.txt #Add um arquivo
 git add . #Add todos os arquivos
 git commit -m "Comentário" #Commitar todos os arquivos
 git commit -am "Comentário" #Commitar somente arquivos já existentes
+git push origin master #Mandar modificações para o github
 
 git log --decorate #Histórico de commits
 git log --author="Renan" #Filtrar commits por autor
