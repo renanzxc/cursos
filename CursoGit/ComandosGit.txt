@@ -1,0 +1,26 @@
+git config --global user.name "Renan Gustavo"
+git config --global user.email "renanzx@live.com"
+git config --global	core.editor subl #Comando do editor
+
+git init #Iniciar repositório local
+
+git status
+git add nomearquivo.txt #Add um arquivo
+git add . #Add todos os arquivos
+git commit -m "Comentário" #Commitar todos os arquivos
+git commit -am "Comentário" #Commitar somente arquivos já existentes
+
+git log --decorate #Histórico de commits
+git log --author="Renan" #Filtrar commits por autor
+git shortlog #Lista autores e seus commits
+git shortlog -sn #Lista autores e número de commits
+git show HASH DO COMMIT #Mostra informações do commit
+
+git diff #Mostrar modificações antes do commit
+git diff --name-only #Mostrar somente os nomes dos arquivos modificados
+
+git checkout nomedoarquivo.txt #Reverter mudanças antes do add, modified
+git reset HEAD nomedoarquivo.txt #Tirar o arquivo da fila de commit, staged
+git reset --soft HASH DO COMMIT ANTERIOR AO COMMIT QUE VOCE QUER VOLTAR #Apaga o commit e volta para depois do add e antes do commit, staged
+git reset --mixed HASH DO COMMIT ANTERIOR AO COMMIT QUE VOCE QUER VOLTAR #Apaga o commit e volta para antes do add, modified
+git reset --hard HASH DO COMMIT ANTERIOR AO COMMIT QUE VOCE QUER APAGAR #Apaga totalmente o commit
