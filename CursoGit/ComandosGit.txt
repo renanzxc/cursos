@@ -33,3 +33,7 @@ git checkout -b nomebranch #Criar branch
 git branch #Verificar em qual branch está
 git checkout nomebranch #Mudar de branch
 git branch -D nomebranch #Deletar branch
+
+git log --graph
+git merge nomebranch #Junta branch atual com outro branch
+git rebase nomebranch #Manda e junta o commit pro topo da lista
