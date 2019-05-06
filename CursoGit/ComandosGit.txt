@@ -36,4 +36,8 @@ git branch -D nomebranch #Deletar branch
 
 git log --graph
 git merge nomebranch #Junta branch atual com outro branch
-git rebase nomebranch #Manda e junta o commit pro topo da lista
+git rebase nomebranch #Manda o commit pro topo da lista
+
+.gitignore #Arquivo onde pode colcocar coisas que devem ser ignoradas
+EX dentro do .gitignore: *.json #Ignorar todos os arquivos .json
+EX: db.txt #Ignora um arquivo
