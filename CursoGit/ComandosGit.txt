@@ -29,15 +29,29 @@ git reset --soft HASH DO COMMIT ANTERIOR AO COMMIT QUE VOCE QUER VOLTAR #Apaga o
 git reset --mixed HASH DO COMMIT ANTERIOR AO COMMIT QUE VOCE QUER VOLTAR #Apaga o commit e volta para antes do add, modified
 git reset --hard HASH DO COMMIT ANTERIOR AO COMMIT QUE VOCE QUER APAGAR #Apaga totalmente o commit
 
+git revert HASH DO COMMIT #Volta para o commit da hash 
+
 git checkout -b nomebranch #Criar branch
 git branch #Verificar em qual branch está
 git checkout nomebranch #Mudar de branch
 git branch -D nomebranch #Deletar branch
+git push origin :nomebranch #Apagar tag do branch online
 
 git log --graph
 git merge nomebranch #Junta branch atual com outro branch
 git rebase nomebranch #Manda o commit pro topo da lista
 
+git stash #Guarda as modificações em outro lugar, antes do add
+git stash apply #Aplica as mudanças guardadas pelo git stash
+ 
+git tag #Ver tags
+git tag -a 1.0.0 -m "Mensagem" #Criar tag de versonamento
+git tag -d 1.0.0 #Apagar tag localmente
+git push origin master --tags #Subir tags para github
+git push origin :1.0.0 #Apagar tag do repositórion online
+
 .gitignore #Arquivo onde pode colcocar coisas que devem ser ignoradas
 EX dentro do .gitignore: *.json #Ignorar todos os arquivos .json
 EX: db.txt #Ignora um arquivo
+
+git config --global alias.ATALHO COMANDO #Criar atalhos para comandos
