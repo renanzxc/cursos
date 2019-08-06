@@ -1,4 +1,4 @@
-git config --global user.name "Renan Gustavo"
+﻿git config --global user.name "Renan Gustavo"
 git config --global user.email "renanzx@live.com"
 git config --global	core.editor subl #Comando do editor
 
@@ -50,7 +50,7 @@ git tag -d 1.0.0 #Apagar tag localmente
 git push origin master --tags #Subir tags para github
 git push origin :1.0.0 #Apagar tag do repositórion online
 
-.gitignore #Arquivo onde pode colcocar coisas que devem ser ignoradas
+.gitignore #Arquivo onde pode colocar coisas que devem ser ignoradas
 EX dentro do .gitignore: *.json #Ignorar todos os arquivos .json
 EX: db.txt #Ignora um arquivo
 
